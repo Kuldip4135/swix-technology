@@ -334,7 +334,7 @@ The visitor first sees their problem, then understands how SWIX reduces the burd
 
 Eyebrow:
 
-> Career support across the USA · UK · Canada
+> Market experience · USA · UK · Canada
 
 Headline territory:
 
@@ -544,7 +544,7 @@ Composition:
 - Dark ink background.
 - Large SWIX wordmark along the bottom edge.
 - Four-column information area: Navigate, Candidates, Employers, Contact.
-- USA · UK · Canada shown as service regions only after business approval.
+- USA · UK · Canada may be shown as markets the team has worked with, never as exclusive service regions.
 - Privacy link and legal line remain visible and readable.
 
 ## 11. Responsive Behavior

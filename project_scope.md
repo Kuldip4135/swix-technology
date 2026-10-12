@@ -8,7 +8,7 @@ The website will explain SWIX's staffing, recruitment, and career-support servic
 
 ## 2. Project Summary
 
-SWIX is a staffing, recruitment, and career-support company serving people and employers connected to opportunities in the United States, United Kingdom, and Canada.
+SWIX is a staffing, recruitment, and career-support company with experience supporting people and employers connected to opportunities in the United States, United Kingdom, and Canada. These markets describe experience, not an exclusive service boundary.
 
 The public website will present SWIX as a professional, supportive, and trustworthy partner for:
 
@@ -89,7 +89,7 @@ Internal knowledge of an excluded service does not authorize its inclusion on th
 
 ### Core positioning statement
 
-SWIX connects talent and opportunity through practical recruitment expertise and personalized career support for students, graduates, experienced professionals, and employers across the USA, UK, and Canada.
+SWIX connects talent and opportunity through practical recruitment expertise and personalized career support for students, graduates, experienced professionals, and employers, with market experience connected to the USA, UK, and Canada.
 
 ### Primary value proposition
 
@@ -155,7 +155,7 @@ Common needs:
 
 ### Geographic audience
 
-The website will address audiences connected to the USA, UK, and Canada. Copy must not imply that every service, vacancy, or employer relationship is available in every country unless confirmed.
+The website may reference experience connected to the USA, UK, and Canada. Copy must present these as markets SWIX has worked with—not as the only places where someone may enquire or as guaranteed service availability.
 
 ## 8. Primary User Journeys
 
@@ -198,7 +198,7 @@ Explain the offer quickly, establish credibility, serve both candidate and emplo
 
 1. **Hero**
    - Clear headline describing staffing, recruitment, and career support.
-   - Short supporting statement mentioning the USA, UK, and Canada without implying guaranteed availability.
+   - Short supporting statement describing USA, UK, and Canada as market experience, not fixed service regions.
    - Primary CTA: “Explore Our Services.”
    - Secondary CTA: “Contact SWIX.”
 
@@ -386,7 +386,7 @@ Provide a simple, trustworthy path for candidate and employer enquiries.
    - Full name — required.
    - Email address — required.
    - Phone number — optional.
-   - Country or region — required; include USA, UK, Canada, and Other.
+   - Candidate location — required free-text field; do not restrict enquiries to USA, UK, or Canada.
    - Enquiry type — required:
      - Student or recent graduate support.
      - Experienced professional support.
@@ -520,7 +520,7 @@ Avoid high-pressure wording and outcome guarantees.
 - Sitemap and intentional `robots.txt`.
 - Organization structured data containing only verified public facts.
 - Descriptive headings, links, and image alternative text.
-- Natural references to staffing, recruitment, career support, résumé services, mock interviews, and the USA, UK, and Canada; no keyword stuffing.
+- Natural references to staffing, recruitment, career support, résumé services, mock interviews, and relevant market experience; no keyword stuffing.
 - No indexing of development or preview deployments.
 
 ## 16. Privacy, Compliance, and Trust
@@ -617,6 +617,6 @@ Possible later phases may include:
 - Appointment scheduling.
 - Résumé upload through a secure provider.
 - CRM or applicant-tracking integration.
-- Market-specific pages for the USA, UK, and Canada.
+- Optional market-experience content for the USA, UK, and Canada, without presenting those markets as exclusive service regions.
 
 Each future feature requires separate scope, privacy, security, accessibility, and content review.

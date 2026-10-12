@@ -56,3 +56,64 @@ if ("IntersectionObserver" in window && !reduceMotion) {
 document.querySelectorAll("[data-current-year]").forEach((item) => {
   item.textContent = new Date().getFullYear();
 });
+
+const contactForm = document.querySelector("[data-contact-form]");
+
+if (contactForm) {
+  const status = contactForm.querySelector("[data-form-status]");
+  const requiredFields = [...contactForm.querySelectorAll("[required]")];
+
+  const errorFor = (field) => contactForm.querySelector(`[data-error-for="${field.id}"]`);
+
+  const clearFieldError = (field) => {
+    field.removeAttribute("aria-invalid");
+    const error = errorFor(field);
+    if (error) error.textContent = "";
+  };
+
+  const validateField = (field) => {
+    clearFieldError(field);
+    let message = "";
+
+    if (field.type === "checkbox" && !field.checked) {
+      message = "Please confirm that you understand this is a local prototype.";
+    } else if (!field.value.trim()) {
+      message = "Please complete this field.";
+    } else if (field.type === "email" && !field.validity.valid) {
+      message = "Enter a valid email address.";
+    }
+
+    if (message) {
+      field.setAttribute("aria-invalid", "true");
+      const error = errorFor(field);
+      if (error) error.textContent = message;
+      return false;
+    }
+
+    return true;
+  };
+
+  requiredFields.forEach((field) => {
+    const eventName = field.type === "checkbox" || field.tagName === "SELECT" ? "change" : "input";
+    field.addEventListener(eventName, () => clearFieldError(field));
+  });
+
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (status) status.hidden = true;
+
+    const validity = requiredFields.map(validateField);
+    const firstInvalid = requiredFields[validity.indexOf(false)];
+
+    if (firstInvalid) {
+      firstInvalid.focus();
+      return;
+    }
+
+    if (status) {
+      status.textContent = "Your enquiry looks complete. This local prototype does not send or store your information.";
+      status.hidden = false;
+      status.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+    }
+  });
+}

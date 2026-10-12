@@ -6,8 +6,8 @@
     <meta name="description" content="{{ description or site.description }}">
     <meta name="theme-color" content="#f3f0e7">
     <title>{{ title or site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | siteUrl }}">
+    <script src="{{ '/assets/js/main.js' | siteUrl }}" defer></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main-content">Skip to main content</a>

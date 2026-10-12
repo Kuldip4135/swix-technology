@@ -1,6 +1,14 @@
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
 
+  const basePath = (process.env.BASE_PATH || "").replace(/\/+$/, "");
+
+  eleventyConfig.addFilter("siteUrl", (url) => {
+    if (!url || url.startsWith("#") || /^[a-z]+:/i.test(url)) return url;
+    const normalizedUrl = url.startsWith("/") ? url : `/${url}`;
+    return `${basePath}${normalizedUrl}`;
+  });
+
   return {
     dir: {
       input: "src",

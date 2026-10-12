@@ -1,0 +1,115 @@
+---
+layout: layouts/page.njk
+title: Contact SWIX — Start a career or hiring conversation
+description: Tell SWIX about your career goal, résumé, interview preparation, managed job search, or employer recruitment need.
+permalink: /contact/
+---
+
+<section class="page-hero contact-hero" aria-labelledby="contact-page-title">
+  <div class="site-shell page-hero-grid">
+    <div class="page-hero-main">
+      <p class="eyebrow reveal">Contact SWIX <span>·</span> Start with context</p>
+      <h1 id="contact-page-title" class="page-title reveal">Tell us what you’re <em>working toward.</em></h1>
+    </div>
+    <div class="page-hero-aside reveal">
+      <span class="page-number">CONTACT / 03</span>
+      <p>Share your career goal or hiring need. We will begin by understanding the situation before recommending a next step.</p>
+    </div>
+    <div class="contact-route-line reveal" aria-hidden="true">
+      <span>YOUR CONTEXT</span><i>→</i><span>A FOCUSED CONVERSATION</span><i>→</i><strong>A CLEAR NEXT STEP</strong>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section section-space" aria-labelledby="contact-form-title">
+  <div class="site-shell contact-page-grid">
+    <aside class="contact-details reveal">
+      <p class="section-label"><span>Direct contact</span></p>
+      <h2>Prefer to reach out directly?</h2>
+      <dl>
+        <div>
+          <dt>Email placeholder</dt>
+          <dd>{{ site.emailPlaceholder }}</dd>
+        </div>
+        <div>
+          <dt>Phone placeholder</dt>
+          <dd>{{ site.phonePlaceholder }}</dd>
+        </div>
+      </dl>
+      <p class="contact-detail-note">These are static design placeholders. Replace them with verified business contact details before launch.</p>
+    </aside>
+
+    <div class="contact-form-wrap reveal">
+      <div class="form-heading">
+        <p class="section-label"><span>Enquiry form</span></p>
+        <h2 id="contact-form-title">Start the conversation.</h2>
+        <p>This local prototype validates the form but does not transmit or store your information.</p>
+      </div>
+
+      <form class="contact-form" data-contact-form novalidate>
+        <div class="form-row">
+          <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+          <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+          <span class="field-error" data-error-for="full-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email address <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="region">Where are you based? <span aria-hidden="true">*</span></label>
+          <input id="region" name="region" type="text" autocomplete="country-name" required>
+          <span class="field-error" data-error-for="region"></span>
+        </div>
+        <div class="form-row form-row-full">
+          <label for="enquiry-type">What can we help with? <span aria-hidden="true">*</span></label>
+          <select id="enquiry-type" name="enquiryType" required>
+            <option value="">Choose an enquiry type</option>
+            <option>Student or recent graduate support</option>
+            <option>Experienced professional support</option>
+            <option>Résumé writing and review</option>
+            <option>Managed job search and applications</option>
+            <option>Mock interview preparation</option>
+            <option>Employer staffing or recruitment</option>
+            <option>General enquiry</option>
+          </select>
+          <span class="field-error" data-error-for="enquiry-type"></span>
+        </div>
+        <div class="form-row form-row-full">
+          <label for="message">Tell us about your goal or hiring need <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+        <label class="consent-row" for="prototype-consent">
+          <input id="prototype-consent" name="prototypeConsent" type="checkbox" required>
+          <span>I understand this local prototype does not submit my information.</span>
+        </label>
+        <span class="field-error consent-error" data-error-for="prototype-consent"></span>
+        <div class="form-submit-row">
+          <button class="button" type="submit">Review enquiry <span aria-hidden="true">↗</span></button>
+          <p>Required fields are marked with an asterisk.</p>
+        </div>
+        <div class="form-status" role="status" aria-live="polite" data-form-status hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="contact-guidance" aria-labelledby="before-title">
+  <div class="site-shell contact-guidance-grid">
+    <p class="section-label"><span>Before you send</span></p>
+    <h2 id="before-title">Useful context makes the first conversation better.</h2>
+    <ul>
+      <li>Your target role or hiring need</li>
+      <li>Your preferred country or working arrangement</li>
+      <li>The support you need most right now</li>
+      <li>Any important timing or constraints</li>
+    </ul>
+    <p>Do not include passport numbers, visa documents, government identifiers, financial details, or other sensitive information.</p>
+  </div>
+</section>

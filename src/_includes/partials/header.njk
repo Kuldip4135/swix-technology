@@ -1,6 +1,6 @@
 <header class="site-header" data-site-header>
   <div class="site-shell header-inner">
-    <a class="wordmark" href="#top" aria-label="SWIX home">
+    <a class="wordmark" href="{{ '/' | siteUrl }}" aria-label="SWIX home">
       <span>SWIX</span><sup aria-hidden="true">®</sup>
     </a>
 
@@ -13,11 +13,11 @@
       <p class="mobile-nav-label" aria-hidden="true">Index / 01—04</p>
       <ul>
         {% for item in nav %}
-          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          <li><a href="{{ item.url | siteUrl }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {% endfor %}
       </ul>
-      <a class="nav-employer" href="#employers">For employers <span aria-hidden="true">↗</span></a>
-      <a class="button button-small" href="#contact">Get career support</a>
+      <a class="nav-employer" href="{{ '/services/#employers' | siteUrl }}">For employers <span aria-hidden="true">↗</span></a>
+      <a class="button button-small" href="{{ '/contact/' | siteUrl }}">Get career support</a>
     </nav>
   </div>
 </header>

@@ -1,6 +1,6 @@
 [
-  { "label": "Home", "url": "#top" },
-  { "label": "About", "url": "#approach" },
-  { "label": "Services", "url": "#services" },
-  { "label": "Contact", "url": "#contact" }
+  { "label": "Home", "url": "/" },
+  { "label": "About", "url": "/about/" },
+  { "label": "Services", "url": "/services/" },
+  { "label": "Contact", "url": "/contact/" }
 ]

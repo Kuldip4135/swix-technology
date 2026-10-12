@@ -8,22 +8,21 @@
       <p class="footer-heading">Navigate</p>
       <ul>
         {% for item in nav %}
-          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          <li><a href="{{ item.url | siteUrl }}">{{ item.label }}</a></li>
         {% endfor %}
       </ul>
     </div>
     <div>
-      <p class="footer-heading">Support</p>
-      <ul>
-        <li><a href="#services">Résumé writing</a></li>
-        <li><a href="#services">Managed applications</a></li>
-        <li><a href="#services">Interview preparation</a></li>
-      </ul>
+      <p class="footer-heading">Contact</p>
+      <p>{{ site.emailPlaceholder }}</p>
+      <p>{{ site.phonePlaceholder }}</p>
+      <p class="footer-note">Static placeholders—replace before launch.</p>
+      <p><a class="footer-contact-link" href="{{ '/contact/' | siteUrl }}">Open contact page ↗</a></p>
     </div>
     <div>
-      <p class="footer-heading">Regions</p>
+      <p class="footer-heading">Market experience</p>
       <p>USA · UK · Canada</p>
-      <p class="footer-note">Service availability is confirmed during your first conversation.</p>
+      <p class="footer-note">Markets our team has worked with—not a boundary on who may enquire.</p>
     </div>
   </div>
   <div class="site-shell footer-bottom">
