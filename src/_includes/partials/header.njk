@@ -1,0 +1,23 @@
+<header class="site-header" data-site-header>
+  <div class="site-shell header-inner">
+    <a class="wordmark" href="#top" aria-label="SWIX home">
+      <span>SWIX</span><sup aria-hidden="true">®</sup>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-mark" aria-hidden="true"></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-navigation>
+      <p class="mobile-nav-label" aria-hidden="true">Index / 01—04</p>
+      <ul>
+        {% for item in nav %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="nav-employer" href="#employers">For employers <span aria-hidden="true">↗</span></a>
+      <a class="button button-small" href="#contact">Get career support</a>
+    </nav>
+  </div>
+</header>

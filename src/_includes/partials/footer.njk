@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="site-shell footer-grid">
+    <div class="footer-intro">
+      <p class="eyebrow eyebrow-inverse">Career support, carefully considered.</p>
+      <p>For students, graduates, experienced professionals, and employers.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Navigate</p>
+      <ul>
+        {% for item in nav %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Support</p>
+      <ul>
+        <li><a href="#services">Résumé writing</a></li>
+        <li><a href="#services">Managed applications</a></li>
+        <li><a href="#services">Interview preparation</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Regions</p>
+      <p>USA · UK · Canada</p>
+      <p class="footer-note">Service availability is confirmed during your first conversation.</p>
+    </div>
+  </div>
+  <div class="site-shell footer-bottom">
+    <p>© <span data-current-year></span> SWIX</p>
+    <p>Human judgment leads.</p>
+  </div>
+  <div class="footer-wordmark" aria-hidden="true">SWIX</div>
+</footer>
